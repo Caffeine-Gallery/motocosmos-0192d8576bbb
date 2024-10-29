@@ -4,7 +4,8 @@ import Debug "mo:base/Debug";
 
 actor {
   public func greet(name : Text) : async Text {
-    Debug.print("Hello, " # name # "!");
-    return "Hello, " # name # "!";
+    let message = "Hello, " # name # "!";
+    Debug.print(message);
+    return message;
   };
 }
